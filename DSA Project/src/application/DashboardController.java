@@ -158,23 +158,5 @@ public class DashboardController {
         fadeTransition.play();
     }
 
-    private void navigateTo(String fxmlFile, ActionEvent event) {
-        try {
-            Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            javafx.fxml.FXMLLoader loader = new javafx.fxml.FXMLLoader(getClass().getResource(fxmlFile));
-            javafx.scene.Parent root = loader.load();
-            stage.setScene(new javafx.scene.Scene(root));
-            stage.show();
-        } catch (Exception e) {
-            showAlert("Navigation Error", "Failed to load the page: " + e.getMessage());
-        }
-    }
-
-    private void showAlert(String title, String message) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
+    
 }
