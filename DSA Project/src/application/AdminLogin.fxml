@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom, #2C2C2C, #0D0D0D);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminLoginController">
+   <children>
+       <Button fx:id="backButton" layoutX="30.0" layoutY="56.0" onAction="#handleBack" onMouseEntered="#handleBackMouseEnter" onMouseExited="#handleBackMouseExit" prefHeight="39.0" prefWidth="42.0" style="-fx-background-color: transparent; -fx-background-radius: 30; -fx-text-fill: #FFFFFF; -fx-font-family: 'Segoe UI Bold';" text="←"></Button>
+      <AnchorPane layoutX="190.0" layoutY="60.0" prefHeight="413.0" prefWidth="320.0" style="-fx-background-color: #222222; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.3, 0, 4);">
+         <children>
+            <Label layoutX="86.0" layoutY="71.0" text="Admin Portal" textFill="#38e4c5">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="107.0" text="Please Enter Your Credentials" textFill="#a0a0a0">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" layoutX="89.0" layoutY="145.0" promptText="Enter Your Email" style="-fx-background-color: transparent; -fx-border-color: #38e4c5; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #FFFFFF;" />
+            <PasswordField fx:id="passwordField" layoutX="90.0" layoutY="189.0" promptText="Enter your Password" style="-fx-background-color: transparent; -fx-border-color: #38e4c5; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #FFFFFF;" />
+           
+            <Button fx:id="adminLoginButton" layoutX="39.0" layoutY="236.0" onAction="#handleLogin" onMouseEntered="#handleButtonMouseEnter" onMouseExited="#handleButtonMouseExit" prefWidth="240.0" style="-fx-background-color: #424242; -fx-background-radius: 20; -fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12pt;" text="Login" textFill="#FFFFFF" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="13.0" prefWidth="700.0" text="AL-SHIFA INTERNATIONAL HOSPITAL" textFill="#38e4c5">
+         <font>
+            <Font name="Sitka Display Bold" size="38.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="#38e4c5" glyphName="USER" layoutX="256.0" layoutY="227.0" size="1.3em" text="" />
+      <FontAwesomeIcon fill="#38e4c5" glyphName="KEY" layoutX="254.0" layoutY="274.0" size="1.3em" />
+   </children>
+</AnchorPane>
