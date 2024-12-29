@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom, #2C2C2C, #0D0D0D);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+    <Button fx:id="backButton" layoutX="30.0" layoutY="56.0" onAction="#handleBack" onMouseEntered="#handleBackMouseEnter" onMouseExited="#handleBackMouseExit" prefHeight="39.0" prefWidth="42.0" style="-fx-background-color: transparent; -fx-background-radius: 30; -fx-text-fill: #FFFFFF; -fx-font-family: 'Segoe UI Bold';" text="←"></Button>
+   <children>
+      <!-- White Card Section -->
+      <AnchorPane layoutX="190.0" layoutY="70.0" prefHeight="380.0" prefWidth="320.0" style="-fx-background-color: #222222; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.3, 0, 4);">
+         <children>
+            <Label layoutX="95.0" layoutY="20.0" text="Dashboard" textFill="#38e4c5">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="55.0" text="Select Your Role to Login" textFill="#a0a0a0">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="40.0" layoutY="100.0" onAction="#handleDoctorLogin" onMouseEntered="#handleButtonMouseEnter" onMouseExited="#handleButtonMouseExit" prefWidth="240.0" style="-fx-background-color: #424242; -fx-background-radius: 20; -fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12pt;" text="Doctor" textFill="#FFFFFF">
+            </Button>
+            <Button layoutX="40.0" layoutY="150.0" onAction="#handleNurseLogin" onMouseEntered="#handleButtonMouseEnter" onMouseExited="#handleButtonMouseExit" prefWidth="240.0" style="-fx-background-color: #424242; -fx-background-radius: 20; -fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12pt;" text="Nurse" textFill="#FFFFFF">
+            </Button>
+            <Button layoutX="40.0" layoutY="200.0" onAction="#handlePatientLogin" onMouseEntered="#handleButtonMouseEnter" onMouseExited="#handleButtonMouseExit" prefWidth="240.0" style="-fx-background-color: #424242; -fx-background-radius: 20; -fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12pt;" text="Patient" textFill="#FFFFFF">
+            </Button>
+            <Button layoutX="40.0" layoutY="250.0" onAction="#handleAdminLogin" onMouseEntered="#handleButtonMouseEnter" onMouseExited="#handleButtonMouseExit" prefWidth="240.0" style="-fx-background-color: #424242; -fx-background-radius: 20; -fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12pt;" text="Admin" textFill="#FFFFFF">
+            </Button>
+            <Button layoutX="40.0" layoutY="300.0" onAction="#handleMakeAppointment" onMouseEntered="#handleButtonMouseEnter" onMouseExited="#handleButtonMouseExit" prefWidth="240.0" style="-fx-background-color: #424242; -fx-background-radius: 20; -fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12pt;" text="Make an Appointment" textFill="#FFFFFF">
+            </Button>
+         </children>
+      </AnchorPane>
+
+      <!-- Header Section -->
+      <Label alignment="CENTER" layoutY="13.0" prefWidth="700.0" text="AL-SHIFA INTERNATIONAL HOSPITAL" textFill="#38e4c5">
+         <font>
+            <Font name="Sitka Display Bold" size="38.0" />
+         </font>
+      </Label>
+
+      <!-- Footer Section -->
+      <Label alignment="CENTER" layoutX="74.0" layoutY="456.0" prefHeight="18.0" prefWidth="579.0" text="Committed to Advancing Health and Well-Being for Every Patient." textFill="#ffffff">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
